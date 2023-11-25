@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 //import { Link } from 'react-router';
 import { Link } from 'react-router-dom';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import {ThemeProvider} from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import { Box } from '@mui/material';
 
 function Home(){
       React.useEffect(()=>{
@@ -13,7 +14,7 @@ function Home(){
         return (
             <div >
                 <br/><br/><br/>
-                <MuiThemeProvider >
+                <Box >
                     <center>
                             <div>
                             <Typography variant="h1" component="div" gutterBottom>
@@ -29,7 +30,7 @@ function Home(){
                                 <Button size='large' variant="outlined">Create quiz</Button>
                             </Link>
                     </center>
-                </MuiThemeProvider>
+                </Box>
 
             </div>
         )
