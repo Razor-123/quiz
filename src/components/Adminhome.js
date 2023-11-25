@@ -124,7 +124,7 @@ function Adminhome() {
                       <IconButton title='Copy Link' onClick={()=>{navigator.clipboard.writeText(server_home+"/quiz/"+quizes_id_list[idx])}} edge="end" aria-label="delete">
                         <ContentCopyIcon sx={{ padding:"10px" }}/>
                       </IconButton>
-                      <Link to={{pathname: `/admin/result/${quizes_id_list[idx]}`}} target="_blank">
+                      <Link to={{pathname: `/result/${quizes_id_list[idx]}`}} target="_blank">
                         <IconButton  title='Show Result' edge="end" aria-label="show">
                           <AssessmentIcon sx={{ padding:"10px" }}/>
                         </IconButton>
