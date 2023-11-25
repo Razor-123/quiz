@@ -1,1 +1,1 @@
-export const server_home = "http://localhost:3000";
+export const server_home = "https://nimble-quokka-c74f74.netlify.app";
