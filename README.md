@@ -1,1 +1,1 @@
-Live app : https://shaleen-quiz-app.herokuapp.com/
+Live app : https://keen-smakager-650db7.netlify.app/
