@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Navigate, useNavigate } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import { server_home } from '../secret';
 
 function EnterUrl() {
     const [url,setUrl] = useState('');
@@ -11,7 +12,7 @@ function EnterUrl() {
         setUrl(event.target.value);
     }
     function enterQuizClicked(){
-        navigate('/'+url.replace("http://localhost:3000/",""));
+        navigate('/'+url.replace(server_home+"/",""));
     }
     return (
         <div>

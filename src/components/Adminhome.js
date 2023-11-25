@@ -16,6 +16,7 @@ import IconButton from '@mui/material/IconButton';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import AssessmentIcon from '@mui/icons-material/Assessment';
 import { Grid } from '@mui/material';
+import { server_home } from '../secret';
 
 
 const style = {
@@ -120,7 +121,7 @@ function Adminhome() {
               <ListItem sx={{ boxShadow: 2,marginTop:"10px"}}
                   secondaryAction={
                     <div>
-                      <IconButton title='Copy Link' onClick={()=>{navigator.clipboard.writeText("localhost:3000/quiz/"+quizes_id_list[idx])}} edge="end" aria-label="delete">
+                      <IconButton title='Copy Link' onClick={()=>{navigator.clipboard.writeText(server_home+"/quiz/"+quizes_id_list[idx])}} edge="end" aria-label="delete">
                         <ContentCopyIcon sx={{ padding:"10px" }}/>
                       </IconButton>
                       <Link to={{pathname: `/admin/result/${quizes_id_list[idx]}`}} target="_blank">
