@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Adminhome from './components/Adminhome';
 import CreateQuiz from './components/CreateQuiz';
 import Login from './components/Login';
-import Quiz from './Quiz';
+import Quiz from './components/Quiz';
 import Result from './components/Result';
 import EnterUrl from './components/EnterUrl';
 import Register from './components/Register';
