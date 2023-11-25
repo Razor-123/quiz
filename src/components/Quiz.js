@@ -1,6 +1,6 @@
 import React , { useState, useRef, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import {db,auth} from './firebase'
+import {db,auth} from '../firebase'
 import { collection, doc, getDoc, onSnapshot, getDocs,setDoc } from "firebase/firestore";
 import Box from '@mui/material/Box';
 import Pagination from '@mui/material/Pagination';
