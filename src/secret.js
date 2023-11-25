@@ -1,1 +1,1 @@
-export const server_home = "https://main--keen-smakager-650db7.netlify.app";
+export const server_home = "https://keen-smakager-650db7.netlify.app";
